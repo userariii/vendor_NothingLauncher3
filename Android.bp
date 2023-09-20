@@ -13,3 +13,15 @@ android_app_import {
 	privileged: true,
 	system_ext_specific: true,
 }
+
+android_app_import {
+	name: "QuickSwitchOverlay",
+	owner: "gms",
+	apk: "overlay/QuickSwitchOverlay.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
