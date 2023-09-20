@@ -1,0 +1,15 @@
+soong_namespace {
+}
+
+android_app_import {
+	name: "NothingLauncher3",
+	owner: "gms",
+	apk: "priv-app/NothingLauncher3/NothingLauncher3.apk",
+	overrides: ["Launcher3QuickStep", "TrebuchetQuickStep", "NexusLauncherRelease"],
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
